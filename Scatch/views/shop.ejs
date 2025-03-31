@@ -1,0 +1,70 @@
+<%- include('./partials/header') %>
+<% if(success.length>0){ %>
+<div
+    class="absolute top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 rounded-md bg-blue-500">
+    <span class="inline-block mt-1 mb-1 text-white">
+        <%= success %>
+    </span>
+</div>
+<% } %>
+
+<div class="w-full h-screen flex items-start px-20 py-20">
+    <div class="w-[25%] flex h-screen flex-col items-start">
+        <div class="flex items-center gap-2">
+            <h3>sort by</h3>
+            <form action="/shop">
+                <select class="border-[1px] px-2 py-1" name="sortby" id>
+                    <option value="popular">Popular</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </form>
+        </div>
+        <div class="flex flex-col mt-20">
+            <a class="block w-fit mb-2" href>New Collection</a>
+            <a class="block w-fit mb-2" href>All Products</a>
+            <a class="block w-fit mb-2" href>Discounted Products</a>
+        </div>
+        <div class="mt-32">
+            <a class="block w-fit mb-2" href>Filter by :</a>
+            <a class="block w-fit mb-2" href>Availability</a>
+            <a class="block w-fit mb-2" href>Discount</a>
+        </div>
+    </div>
+
+    <div class="w-full flex flex-wrap gap-5 justify-center">
+        <% products.forEach(function(product){ %>
+        <div class="w-60 relative">
+            <div
+                class="absolute top-2 right-2 bg-[<%= product.panelColor %>] text-white text-xs font-bold px-3 py-1 rounded-full">
+                Offer
+                <br />
+                ₹ <%= product.discount %>
+            </div>
+
+            <div
+                class="w-full h-52 flex items-center justify-center bg-[<%= product.bgColor %>]">
+                <img class="h-[13rem]"
+                    src="data:image/jpeg;base64, <%= product.image.toString('base64') %>"
+                    alt>
+            </div>
+            <div
+                class="flex justify-between bg-[<%= product.panelColor %>] items-center px-4 py-4 text-[<%= product.textColor %>]">
+                <div>
+                    <h3><%= product.name %></h3>
+                    <h4>₹
+                        <del><%= product.price %></del>
+                        <%= product.price - product.discount %></h4>
+                </div>
+                <div class="flex justify-between items-center px-4 py-4">
+                    <a
+                        class="w-7 h-7 flex items-center justify-center rounded-full bg-white text-black"
+                        href="/addtocart/<%= product.id %>">
+                        <i class="ri-add-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+<%- include('./partials/footer') %>
