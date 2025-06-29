@@ -1,10 +1,10 @@
-# Sheriyan's Coding School Backend Series
+# Sheryian's Coding School Backend Series
 
-Welcome to **Sheriyan's Coding School Backend Series**! In this playlist, we delve deep into the essentials of **JavaScript** for backend development. Whether you're a beginner or looking to brush up on your skills, this series will guide you step by step through key concepts and practical applications of backend development using JavaScript.
+Welcome to **Sheryian's Coding School Backend Series**! In this playlist, we delve deep into the essentials of **JavaScript** for backend development. Whether you're a beginner or looking to brush up on your skills, this series will guide you step by step through key concepts and practical applications of backend development using JavaScript.
 
 ## Playlist Overview
 
-The **Sheriyan's Coding School Backend Series** is designed to teach you the fundamentals of backend development with a focus on **JavaScript**. We cover a range of topics, from the basic building blocks of the language to more advanced concepts like asynchronous programming and database integration. By the end of the series, you will have a solid understanding of backend development and be able to build robust, scalable web applications using JavaScript.
+The **Sheryian's Coding School Backend Series** is designed to teach you the fundamentals of backend development with a focus on **JavaScript**. We cover a range of topics, from the basic building blocks of the language to more advanced concepts like asynchronous programming and database integration. By the end of the series, you will have a solid understanding of backend development and be able to build robust, scalable web applications using JavaScript.
 
 ### Key Topics Covered:
 - **Introduction to Backend Development**: What is backend development and why it's crucial for building modern web applications.
@@ -34,7 +34,7 @@ JavaScript is no longer just for frontend development. With the advent of **Node
 ## Watch the Series
 
 You can start watching the entire playlist here:  
-[**Sheriyan's Coding School Backend Series**](https://youtu.be/T55Kb8rrH1g?si=WzaI9xoeOLAq75Qm)
+[**Sheryian's Coding School Backend Series**](https://youtu.be/T55Kb8rrH1g?si=WzaI9xoeOLAq75Qm)
 
 ### Don't forget to like, subscribe, and hit the bell icon to get notified about new content and updates!
 
